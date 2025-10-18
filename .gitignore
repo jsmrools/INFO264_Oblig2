@@ -1,0 +1,14 @@
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Jupyter autosaves (optional)
+.ipynb_checkpoints/
+
+# Virtual envs (optional)
+.env/
+.venv/
+venv/

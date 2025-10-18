@@ -19,7 +19,6 @@ def train_eval_model_cv(model, X_train, y_train, X_val, y_val, seed = 7, cv = 3,
 
     kf = KFold(n_splits=cv, shuffle=True, random_state=seed)
     all_scores = []
-    print(f'Starting {model} {cv}-fold cross-validation...')
     for (train_index, val_index) in kf.split(combined_X,combined_y):
         X_train, X_val = combined_X[train_index], combined_X[val_index]
         y_train, y_val = combined_y[train_index], combined_y[val_index]
